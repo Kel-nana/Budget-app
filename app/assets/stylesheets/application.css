@@ -9,7 +9,85 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *= require inter-font
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: #eff2f1;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.blue-btn {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+#signup-btn {
+  text-decoration: none;
+}
+
+.flex_btn {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.rounded_icon {
+  width: 50px;
+  height: 50px;
+}
+
+.text-color {
+  color: black;
+}
+
+.text-green {
+  color: #5fb523;
+  font-weight: 900;
+}
+
+.green-btn {
+  background-color: #5fb523;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.justify {
+  padding-right: 40vw;
+}
+
+.video_style {
+  width: 94vw;
+  border: 1.8px solid #5fb523;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+  overflow: hidden;
+}
+
+.position {
+  position: absolute;
+  z-index: -1;
+}
+
+.display {
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
