@@ -7,6 +7,7 @@ gem 'devise'
 gem 'rails-controller-testing'
 gem 'rswag'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'tailwindcss-rails', '~> 2.0'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
 
@@ -53,7 +54,13 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'capybara'
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'rspec-rails'
+  gem 'selenium-webdriver', '~> 4.12.0'
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'webdrivers', '~> 5.0'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
@@ -69,9 +76,8 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
-end
+# group :test do
+#   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+#   gem 'selenium-webdriver'
+#   gem 'webdrivers'
+# end

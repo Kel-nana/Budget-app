@@ -1,0 +1,26 @@
+<div class="flex flex-col justify-between h-screen items-center">
+  <p class="text-center p-3 blue-btn w-full">Welcome:</br></p>
+  <h1 class=" text-4xl font-extrabold video_style">
+<%= video_tag video_path('budget_logo_vid.mp4'), autoplay: :autoplay, loop: :loop, muted: :muted %>
+  </h1>
+  <div class="w-full">
+    <% if user_signed_in? %>
+      <div>
+        <script>
+    window.location.href = '<%= categories_path %>';
+  </script>
+      </div>
+    <% else %>
+
+      <div class="flex flex_btn">
+        <p class = "diplay text-green">Budget App</p>  
+        <div class="log-in-btn">
+<%= button_to "Log in", new_user_session_path, class: "blue-btn w-full p-4 border-e-2", id: "login-btn" %>
+</div>
+<div class="sign-up-btn flex_btn">
+<%= link_to "sign_up", new_user_registration_path, class: "blue-btn w-full p-4 border-s-2", id: "signup-btn" %>
+</div>
+      </div>
+    <% end %>
+  </div>
+</div>
