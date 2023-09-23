@@ -32,5 +32,5 @@
 </div>
       <% end %>
 <div>
-  <%= button_to "Delete", @purchase, method: :delete, class: "mt-5 ms-5 p-3 px-5 red-btn text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 drop-shadow-md" %>
+<%= button_to "Delete Purchase",@purchase, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color" %>
 </div>
