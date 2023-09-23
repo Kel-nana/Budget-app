@@ -23,16 +23,16 @@
 
   <section class="flex flex-col space-y-2 p-5">
       <%= link_to new_category_purchase_path(@category) do %>
-        <button data-testid="new-purchase-button" class="drop-shadow-md p-3 w-full green-btn hover:text-white rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 text-color">
+        <button data-testid="new-purchase-button" class="drop-shadow-md p-3 w-full green-btn hover:text-white rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 text-color width_max">
           New purchase
         </button>
           <% end %>
       </a>
 
       <%= link_to edit_category_path(@category) do %>
-        <button data-testid="edit-category-button" class="drop-shadow-md p-3 orange-btn bg-white w-full rounded hover:bg-orange-600">Edit category</button>
+        <button data-testid="edit-category-button" class="drop-shadow-md p-3 orange-btn bg-white w-full rounded hover:bg-orange-600 width_max">Edit category</button>
       <% end %>
 
-      <%= button_to "Delete category", @category, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color" %>
+      <%= button_to "Delete category", @category, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color width_max" %>
     </section>
   </div>
