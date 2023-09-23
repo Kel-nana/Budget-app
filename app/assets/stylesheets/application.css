@@ -91,3 +91,17 @@ body {
     transform: scale(1);
   }
 }
+
+.display_nav {
+  width: 70vw;
+  height: 8vh;
+}
+
+.w-max1 {
+  width: 70vw;
+}
+
+.flex_d {
+  display: flex;
+  flex-direction: column;
+}
