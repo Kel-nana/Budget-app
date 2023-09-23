@@ -23,7 +23,6 @@
     <span><strong>Created at:</strong></span>
     <span><%= @purchase.created_at %></span>
   </p>
-</div>
 <p>
       | <%= link_to "home purchase", purchases_path,class:"text-green" %>
     </p>
@@ -33,4 +32,5 @@
       <% end %>
 <div>
 <%= button_to "Delete Purchase",@purchase, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color" %>
+</div>
 </div>

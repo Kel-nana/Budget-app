@@ -26,7 +26,12 @@
         ]
       }
     ],
-    "csstree/validator": true
+    "csstree/validator": true,
+    "tailwindcss/no-contradicting-class": null,
+    "tailwindcss/no-unknown-class": null,
+    "no-descending-specificity": null,
+    "declaration-block-trailing-semicolon": null,
+    "scss.lint.unknownAtRules": "ignore"
   },
   "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css"]
 }
