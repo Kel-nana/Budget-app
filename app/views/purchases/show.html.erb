@@ -24,13 +24,13 @@
     <span><%= @purchase.created_at %></span>
   </p>
 <p>
-      | <%= link_to "home purchase", purchases_path,class:"text-green" %>
+      | <%= link_to "home purchase", purchases_path,class:"text-green mt-10" %>
     </p>
 <%= link_to edit_purchase_path(@purchase) do %>
-        <button data-testid="edit-category-button" class="drop-shadow-md p-3 orange-btn bg-white w-full rounded hover:bg-orange-600">Edit Purchases</button>
+        <button data-testid="edit-category-button" class="drop-shadow-md p-3 orange-btn bg-white w-full rounded hover:bg-orange-600 mt-3">Edit Purchases</button>
 </div>
       <% end %>
 <div>
-<%= button_to "Delete Purchase",@purchase, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color" %>
+<%= button_to "Delete Purchase",@purchase, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color mt-3" %>
 </div>
 </div>
