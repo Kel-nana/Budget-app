@@ -50,6 +50,10 @@ body {
   font-weight: 900;
 }
 
+.text-size {
+  font-size: 1.5em;
+}
+
 .green-btn {
   background-color: #5fb523;
   border-radius: 5px;
