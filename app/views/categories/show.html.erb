@@ -10,7 +10,7 @@
     <p style="color: green"><%= notice %></p>
 <%= render "shared/category", category: @category %>
     <section class="px-5">
-      | <%= link_to "home purchase", purchases_path, class: "text-green" %>
+      | <%= link_to "home purchase", purchases_path, class: "text-green " %>
       <div id="purchases">
         <% @purchases.each do |purchase| %>
           <a href="<%= category_purchase_path(@category, purchase) %>" class="m-1">

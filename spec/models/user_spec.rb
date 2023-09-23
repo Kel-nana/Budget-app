@@ -16,7 +16,6 @@ RSpec.describe User, type: :model do
     it { should have_many(:purchases) }
   end
 
-
   describe 'validations' do
     it { should validate_presence_of(:name) }
   end

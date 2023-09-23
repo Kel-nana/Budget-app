@@ -1,12 +1,9 @@
-/* eslint-disable tailwindcss/no-contradicting-class, tailwindcss/no-unknown-class */
+/* tailwindcss-disable-all */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-/* eslint-disable-next-line scss.lint.unknownAtRules */
-
-/* eslint-disable-next-line */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* tailwindcss-enable-all */
 
 /*
 

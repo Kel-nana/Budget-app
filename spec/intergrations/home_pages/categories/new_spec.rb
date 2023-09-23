@@ -25,7 +25,6 @@ RSpec.describe 'New category Page', type: :feature do
     # Check if the 'Editing category' heading is present
     expect(page).to have_content('New Category', wait: 10)
 
-
     # You can add more expectations as needed for other elements within this section
   end
 end

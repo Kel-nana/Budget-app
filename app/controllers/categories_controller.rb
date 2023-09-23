@@ -64,7 +64,7 @@ class CategoriesController < ApplicationController
   def category_params
     params.require(:category).permit(:name, :icon)
   end
- 
+
   def handle_uploaded_icon_file
     uploaded_file = category_params[:icon]
     file_path = Rails.root.join('public', 'icon_uploads', uploaded_file.original_filename)
