@@ -1,0 +1,33 @@
+<div class = "flex_d">
+<h2 class = "text-green text-size">Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+ <h1 class=" text-4xl font-extrabold video_style position">
+<%= video_tag video_path('budget_logo_vid.mp4'), autoplay: :autoplay, loop: :loop, muted: :muted %>
+  </h1>
+  <div class="mt-4 ml-10 flex flex-col gap-3 ms-4 justify-center content-center  flex-grow">
+  <div class="field">
+    <%= f.label :email, class: "text-white"%><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, class: "text-white"%><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me, class: "text-white" %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in", class: "green-btn text-white" %>
+  </div>
+    <%= render "devise/shared/links" %>
+    </div>
+<% end %>
+   </div>
+

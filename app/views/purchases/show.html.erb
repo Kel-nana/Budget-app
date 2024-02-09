@@ -1,0 +1,36 @@
+<div class="flex_d navigation py-6 px-3 blue-nav-white-text">
+  <ul class="flex justify-between items-center width_max">
+    <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), category_path(@purchase.categories[0]), class: 'nav-link' %></li>
+    <h2><strong>Show purchase</strong></h2>
+    <li><%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link text-green" %></li>
+  </ul>
+<p style="color: green"><%= notice %></p>
+
+<div class="flex flex-col bg-white p-5 drop-shadow-md">
+  <p class="flex justify-between py-2">
+    <span><strong>Name:</strong></span>
+    <span><%= @purchase.name %></span>
+  </p>
+  <p class="border-y-4 py-2 flex justify-between">
+    <span><strong>Amount:</strong></span>
+    <span>$<%= @purchase.amount %></span>
+  </p>
+  <p class="border-b-4 py-2 flex justify-between">
+    <span><strong>Categories:</strong></span>
+    <span><%= @purchase.categories[0].name %></span>
+  </p>
+  <p class="py-2 flex justify-between">
+    <span><strong>Created at:</strong></span>
+    <span><%= @purchase.created_at %></span>
+  </p>
+<p>
+      | <%= link_to "home purchase", purchases_path,class:"text-green mt-10" %>
+    </p>
+<%= link_to edit_purchase_path(@purchase) do %>
+        <button data-testid="edit-category-button" class="drop-shadow-md p-3 orange-btn bg-white w-full rounded hover:bg-orange-600 mt-3">Edit Purchases</button>
+</div>
+      <% end %>
+<div>
+<%= button_to "Delete Purchase",@purchase, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn hover:text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 text-color mt-3" %>
+</div>
+</div>
